@@ -1,0 +1,259 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #fcf2f2;
+  font-family: sans-serif;
+  color: #f6eeee;
+  line-height: 1.6;
+}
+
+.main{
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: 350px 1fr;
+  gap: 50px;
+  padding-top: 40px;
+  margin: auto;
+  align-items: start; /* optional: aligns columns at top */
+}
+
+.side{
+  height: 90vh;
+  border-radius: 16px;
+  background-color: #c07575;
+  border: 1px solid #3a3a3a;
+  padding: 20px;
+  overflow: auto; /* safe if content is taller */
+}
+
+.content{
+  
+  background-color: #96746182;
+  border-radius: 16px;
+  border: 1px solid #3a3a3a;
+  padding: 20px;
+  overflow: auto;
+  padding: 40px;
+  text-align: justify;
+}
+
+.profile img{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.profile h2{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 20px;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+.profile p{
+  background-color: #b58b8b;
+  padding: 5px 15px;
+  color: #e1ded4;
+  border: 1px solid #3a3a3a;
+  font-size: 0.8rem;
+  border-radius: 15px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.profile{
+  text-align: center;
+}
+
+/* contact info */
+.info{
+  margin-top: 30px;
+  border-top: 2px solid white;
+  padding: 20px;
+}
+
+.em{
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #a0a0a0;
+}
+
+.value{
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+.email, .cell, .location{
+  margin-bottom: 15px;
+}
+
+/* Social Media - no flex required */
+.social{
+  margin-top: 15px;
+  border-top: 2px solid white;
+  padding: 10px;
+  text-align: center;
+}
+
+.g{
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.g img{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  vertical-align: middle;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(3628%) hue-rotate(117deg) brightness(112%) contrast(80%);
+transition: filter 0.3s ease;}
+.g img:hover{
+    filter: brightness(100%) saturate(100%) invert(0%) sepia(0%) hue-rotate(0deg) contrast(100%);
+
+}
+
+
+/*maincontent  Nav bar*/
+
+#home{
+    border-bottom: 2px solid #3a3a3a;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+#nav{
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    
+
+}
+nav a{
+    text-decoration: none;
+    color: #a0a0a0;
+    font-weight: 500;
+    
+}
+nav a:hover{
+    color: rgb(10, 96, 76);
+}
+
+
+/*about me*/
+.heading{
+    color: #e0e0e0;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.line{
+    width: 60px;
+    height: 5px;
+    background-color: #FFBF00;
+    margin-bottom: 15px;
+}
+#about{
+    margin-bottom: 40px;
+}
+/*skills*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));/* exactly 4 items per row */
+    gap: 20px;
+align-items: start;}
+
+.grid .item img
+{
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+}
+.item{
+    margin-top: 20px;
+
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #3a3a3a;
+    filter: brightness(0) saturate(100%) invert(61%) sepia(83%) saturate(379%) hue-rotate(17deg) brightness(92%) contrast(90%);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.item h3{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.item:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0);
+
+}
+#edu{
+    margin-top: 20px;
+
+}
+
+
+/*education */
+.up{
+    position: relative;
+    
+}
+.year{
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    margin-bottom: 5px;
+}
+
+.degree{
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.college{
+    font-style: italic;
+    color: #a0a0a0;
+    margin-bottom: 10px;
+}
+.work{
+    color: #a0a0a0;
+}
+.edu1{
+    margin-bottom: 30px;
+}
+.edu2{
+    margin-bottom: 30px;
+}
+.edu3{
+    margin-bottom: 30px;
+}
+.edu1,.edu2,.edu3{
+    position: relative;
+    padding-left: 20px;
+}
+.goal{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border:3px solid yellow;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    z-index: 1;
+}
+
+.liner{
+    position: absolute;
+    width: 5px;
+    top: 10px;
+    bottom:0px;
+    left: 5px;
+    border:2px solid #3a3a3a;
+
+
+}
